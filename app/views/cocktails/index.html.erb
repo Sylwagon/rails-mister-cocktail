@@ -1,10 +1,11 @@
-<div class="container">
-  <h1>Cocktails List</h1>
-  <div class="card">
+<div class="container home">
+  <h1 class="flexox">Tagada Cocktails</h1>
+  <div class="row">
     <% @cocktails.each do |cocktail| %>
-    <div class="row">
-      <div class="col-sm-6">
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+      <div class="card">
         <%= link_to cocktail.name, cocktail_path(cocktail) %>
+        <%= image_tag "https://banner2.kisspng.com/20180202/yze/kisspng-mojito-cocktail-rum-margarita-chocolate-truffle-mojito-transparent-png-5a7527378f65f4.8440052815176271915874.jpg", alt: "Le Wagon", width: 200 %>
       </div>
     </div>
     <% end %>

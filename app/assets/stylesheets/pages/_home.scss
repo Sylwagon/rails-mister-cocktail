@@ -1,1 +1,19 @@
 // Specific CSS for your home-page
+body {
+  background-color: #F8DAE3;
+}
+
+.home {
+  background-color: #F8DAE3;
+  h1 {
+    font-family: Yesteryear;
+    font-size: 120px;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+}
